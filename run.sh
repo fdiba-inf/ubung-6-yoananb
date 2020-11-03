@@ -20,9 +20,9 @@ for file in exercise*/*.java; do
 		echo "javac $file"
 		javac $file
 		class=$(echo $file | sed 's/.java//' | sed 's/\//./')
-		echo "java $class"
+		echo "java -ea $class"
 		echo -e "\U0001f680 \U0001f648 \U0001f649 \U0001f64A \U0001f680"
-		java $class
+		java -ea $class
 	else 
 		:
 	fi
